@@ -267,8 +267,6 @@ p {
 }
 .imageContainer img {
   width: 30rem;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 .ctaCard {
