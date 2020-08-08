@@ -9,7 +9,7 @@ body {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   overflow-x: hidden;
-  background-color: #f8f8f8;
+  background-color: #f6f6f6;
   position: relative;
   width: 100vw;
   height: 100%;
@@ -36,22 +36,257 @@ ul {
 }
 
 h1,
-h2,
-a {
+h2 {
   font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  text-align: center;
+  line-height: 4rem;
+}
+
+h3 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
 }
 
 p {
   font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  line-height: 2.2rem;
 }
 
 .container {
   display: grid;
-  grid-template-columns: minmax(30px, 1fr) minmax(-webkit-min-content, 1520px) minmax(30px, 1fr);
-  grid-template-columns: minmax(30px, 1fr) minmax(min-content, 1520px) minmax(30px, 1fr);
+  grid-template-columns: minmax(20px, 1fr) minmax(-webkit-min-content, 1520px) minmax(20px, 1fr);
+  grid-template-columns: minmax(20px, 1fr) minmax(min-content, 1520px) minmax(20px, 1fr);
 }
 .container__content {
   grid-column: 2/3;
+}
+
+.header {
+  background-color: #f6f6f6;
+  position: fixed;
+  display: grid;
+  grid-template-columns: minmax(30px, 1fr) minmax(-webkit-min-content, 1520px) minmax(30px, 1fr);
+  grid-template-columns: minmax(30px, 1fr) minmax(min-content, 1520px) minmax(30px, 1fr);
+}
+.header__content {
+  grid-column: 2/3;
+  height: 6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header__logo {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.8rem;
+}
+.header__burger span {
+  display: block;
+  width: 3.5rem;
+  height: 3px;
+  background-color: #000;
+  border-radius: 100px;
+  margin-bottom: 5px;
+}
+.header__burger span:last-child {
+  margin-bottom: 0;
+}
+
+.welcomeCard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 15rem 0 5rem 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.welcomeCard__heading {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+.welcomeCard__subheading {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+.welcomeCard__text {
+  font-size: 1.6rem;
+  text-align: center;
+}
+.welcomeCard__cta {
+  margin-top: 2rem;
+}
+
+.button {
+  width: 20rem;
+  height: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 10px;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 300;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.button-full {
+  background: -webkit-gradient(linear, left top, right top, from(#4c23c2), to(#6146c2));
+  background: -o-linear-gradient(left, #4c23c2, #6146c2);
+  background: linear-gradient(to right, #4c23c2, #6146c2);
+  -webkit-box-shadow: 0px 5px 10px rgba(76, 35, 194, 0.5);
+          box-shadow: 0px 5px 10px rgba(76, 35, 194, 0.5);
+  color: #fff;
+}
+.button-full:hover {
+  -webkit-transform: translateY(3px);
+      -ms-transform: translateY(3px);
+          transform: translateY(3px);
+  -webkit-box-shadow: 0px 2px 7px rgba(76, 35, 194, 0.7);
+          box-shadow: 0px 2px 7px rgba(76, 35, 194, 0.7);
+}
+
+.button-border {
+  background-color: #fff;
+  border: 1px solid #000;
+}
+
+.button-underline {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 300;
+  border-bottom: 1px solid #4c23c2;
+}
+
+.textCard {
+  padding: 10rem 0 5rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.textCard__heading {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.textCard__text {
+  font-size: 1.6rem;
+  text-align: center;
+}
+.textCard__cta {
+  margin-top: 2rem;
+}
+
+.stepCard {
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 4rem 2rem;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  margin-bottom: 3rem;
+}
+.stepCard__title {
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+.stepCard__description {
+  font-size: 1.6rem;
+  text-align: center;
+}
+.stepCard__image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1.5rem;
+  border-radius: 50%;
+  margin-bottom: 2rem;
+  -webkit-box-shadow: 0px 5px 10px rgba(76, 35, 194, 0.5);
+          box-shadow: 0px 5px 10px rgba(76, 35, 194, 0.5);
+  background: -webkit-gradient(linear, left top, right top, from(#4c23c2), to(#6146c2));
+  background: -o-linear-gradient(left, #4c23c2, #6146c2);
+  background: linear-gradient(to right, #4c23c2, #6146c2);
+}
+.stepCard__image img {
+  width: 4rem;
+}
+
+.imageContainer {
+  margin-top: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.imageContainer img {
+  width: 30rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.ctaCard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 5rem 0;
+}
+.ctaCard__text {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
 }
 
 /*# sourceMappingURL=/main.css.map */

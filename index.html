@@ -3,12 +3,99 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
+		<title>Iznajmi sajt</title>
 		<link rel="stylesheet" href="./css/main.css" />
 	</head>
 	<body>
+		<header class="header">
+			<div class="header__content">
+				<div class="header__logo">Iznajmi sajt</div>
+				<div class="header__navigation"></div>
+				<a href="" class="header__burger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</a>
+			</div>
+		</header>
+
 		<div class="container">
-			<div class="container__content"></div>
+			<div class="container__content">
+				<!-- Welcome section -->
+				<section id="homepage-welcome">
+					<div class="welcomeCard">
+						<h1 class="welcomeCard__heading">
+							Iznajmite kompletan sajt napravljen samo za vas
+						</h1>
+						<h3 class="welcomeCard__subheading">Novi način izrade veb sajta</h3>
+						<p class="welcomeCard__text">
+							Znamo da ste zauzeti, iz tog razloga ćemo izraditi sajt za vas od
+							samog dizajna do plasiranja na tržištu
+						</p>
+						<a href="#" class="welcomeCard__cta button button-full"
+							>Saznaj više</a
+						>
+					</div>
+					<div class="imageContainer">
+						<img src="./img/testMockup.png" alt="" />
+					</div>
+				</section>
+
+				<!-- Price cta section -->
+				<section id="homepage-price">
+					<div class="textCard">
+						<h2 class="textCard__heading">Uštedite novac svakog meseca</h2>
+						<p class="textCard__text">
+							Nemate potrebe da plaćate dizajnera ili programera kako bi vam
+							napravili sajt. Sve ovo je uključeno u vašoj mesečnoj pretplati.
+							Naš tim sarađuje sa vama kako bi se vaši zahtevi ispunili i uvek
+							je na raspolaganju za odgovor na sva vaša pitanja.
+						</p>
+						<a href="#" class="textCard__cta button button-full">Cenovnik</a>
+					</div>
+				</section>
+
+				<!-- homepage steps section -->
+				<section id="homepage-steps">
+					<div class="textCard">
+						<h2 class="textCard__heading">3 koraka do vašeg sajta</h2>
+						<p class="textCard__text">
+							Pratite ova tri koraka i imaćete vaš novi sajt u najkraćem roku.
+						</p>
+					</div>
+
+					<div class="stepCard">
+						<div class="stepCard__image">
+							<img src="./img/clicking.svg" alt="" />
+						</div>
+						<h2 class="stepCard__title">Korak 1</h2>
+						<p class="stepCard__description">Izaberite paket pretplate</p>
+					</div>
+					<div class="stepCard">
+						<div class="stepCard__image">
+							<img src="./img/letter.svg" alt="" />
+						</div>
+						<h2 class="stepCard__title">Korak 2</h2>
+						<p class="stepCard__description">
+							Kontaktirajte nas kako bi se dogovorili oko detalja u vezi izrade
+							vašeg sajta
+						</p>
+					</div>
+					<div class="stepCard">
+						<div class="stepCard__image">
+							<img src="./img/rocket.svg" alt="" />
+						</div>
+						<h2 class="stepCard__title">Korak 2</h2>
+						<p class="stepCard__description">
+							Pregled i plasiranje vašeg sajta na tržištu
+						</p>
+					</div>
+					<div class="ctaCard">
+						<p class="ctaCard__text">Pogledajte korake detaljnije</p>
+						<a href="#" class="ctaCard__btn button button-full">Detaljnije</a>
+					</div>
+				</section>
+			</div>
 		</div>
 	</body>
 </html>

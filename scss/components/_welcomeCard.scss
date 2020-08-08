@@ -1,0 +1,24 @@
+.welcomeCard {
+	display: flex;
+	padding: 15rem 0 5rem 0;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	&__heading {
+		font-size: $font-size-big;
+		margin-bottom: 2rem;
+	}
+	&__subheading {
+		text-align: center;
+		font-size: $font-size-normal;
+		margin-bottom: 1rem;
+	}
+	&__text {
+		font-size: $font-size-small;
+		text-align: center;
+	}
+	&__cta {
+		margin-top: 2rem;
+	}
+}

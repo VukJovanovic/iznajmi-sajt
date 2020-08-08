@@ -5,11 +5,20 @@ $font-family-secondary: 'Open Sans', sans-serif;
 
 // Heading styles
 h1,
-h2,
-a {
+h2 {
 	font-family: $font-family-primary;
+	font-weight: $font-weight-bold;
+	text-align: center;
+	line-height: 4rem;
+}
+
+h3 {
+	font-family: $font-family-secondary;
+	font-weight: $font-weight-semiBold;
 }
 
 p {
 	font-family: $font-family-secondary;
+	font-weight: $font-weight-light;
+	line-height: 2.2rem;
 }

@@ -1,0 +1,44 @@
+.header {
+	// ********
+	// Header layout
+	// ********
+	background-color: $color-tertiary;
+	position: fixed;
+	display: grid;
+	grid-template-columns: minmax(30px, 1fr) minmax(min-content, 1520px) minmax(
+			30px,
+			1fr
+		);
+
+	// ********
+	// Header content
+	// ********
+
+	&__content {
+		grid-column: 2 / 3;
+		height: 6rem;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__logo {
+		font-family: $font-family-primary;
+		font-size: 1.8rem;
+	}
+
+	&__burger {
+		span {
+			display: block;
+			width: 3.5rem;
+			height: 3px;
+			background-color: $color-primary;
+			border-radius: 100px;
+			margin-bottom: 5px;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+}

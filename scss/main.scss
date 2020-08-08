@@ -3,5 +3,14 @@
 @import './base/variables';
 @import './base/typography';
 
-// layout css files
+// layout scss files
 @import './layout/grid';
+
+// component scss files
+@import './components/header';
+@import './components/welcomeCard';
+@import './components/buttons';
+@import './components/textCard';
+@import './components/stepCard';
+@import './components/imageContainer';
+@import './components/ctaCard';
