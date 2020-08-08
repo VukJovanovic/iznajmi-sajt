@@ -162,11 +162,11 @@ p {
   color: #fff;
 }
 .button-full:hover {
-  -webkit-transform: translateY(3px);
-      -ms-transform: translateY(3px);
-          transform: translateY(3px);
-  -webkit-box-shadow: 0px 2px 7px rgba(76, 35, 194, 0.7);
-          box-shadow: 0px 2px 7px rgba(76, 35, 194, 0.7);
+  -webkit-transform: scale(0.95);
+      -ms-transform: scale(0.95);
+          transform: scale(0.95);
+  -webkit-box-shadow: 0px 3px 7px rgba(76, 35, 194, 0.7);
+          box-shadow: 0px 3px 7px rgba(76, 35, 194, 0.7);
 }
 
 .button-border {
@@ -286,6 +286,64 @@ p {
 .ctaCard__text {
   font-size: 1.6rem;
   margin-bottom: 1rem;
+}
+
+#homepage-designs .textCard {
+  padding-top: 5rem;
+}
+
+.designsContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.designCard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 3rem;
+}
+.designCard img {
+  width: 30rem;
+  height: 16.5rem;
+  -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  -o-transition: transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+}
+.designCard img:hover {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.cardContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+#fullImg {
+  position: relative;
+}
+#fullImg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #f6f6f6), to(transparent));
+  background: -o-linear-gradient(top, #f6f6f6 10%, transparent 100%);
+  background: linear-gradient(to bottom, #f6f6f6 10%, transparent 100%);
+}
+#fullImg img {
+  width: 100%;
 }
 
 /*# sourceMappingURL=/main.css.map */
