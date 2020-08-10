@@ -1,0 +1,51 @@
+.footer{
+    background-color: $color-primary;
+    padding: 2rem;
+
+    &__content{
+
+        & > * {
+            padding: 1rem;
+        }
+
+        p{
+            font-family: $font-family-primary;
+            font-size: $font-size-small;
+            color: $color-secondary;
+        }
+
+        h2{
+            font-size: $font-size-large;
+            font-weight: $font-weight-normal;
+            color: $color-secondary;
+            text-align: left;
+            border-bottom: solid 2px;
+            width: max-content;
+        }
+
+        &-basicInfo{
+
+            & > * {
+                padding-bottom: 1rem;
+            }
+            
+            img{
+                width: 4rem;
+            }
+
+            a{
+                display: flex;
+                align-items: center;
+                width: max-content;
+            }
+
+            .socialMedia{
+                display: flex;
+                a{
+                    padding-right: 2rem;
+                }
+                
+            }
+        }
+    }
+}
