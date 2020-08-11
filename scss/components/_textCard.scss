@@ -6,10 +6,20 @@
 	&__heading {
 		font-size: $font-size-large;
 		margin-bottom: 1rem;
+		@media only screen and (min-width: 1024px) {
+			font-size: 2.2rem;
+			line-height: 2.5rem;
+			margin-bottom: 2rem;
+		}
 	}
 	&__text {
 		font-size: $font-size-small;
 		text-align: center;
+
+		@media only screen and (min-width: 1024px) {
+			font-size: 1.8rem;
+			line-height: 2.5rem;
+		}
 	}
 	&__cta {
 		margin-top: 2rem;

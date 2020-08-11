@@ -10,7 +10,13 @@
 		<header class="header">
 			<div class="header__content">
 				<div class="header__logo">Iznajmi sajt</div>
-				<div class="header__navigation"></div>
+				<div class="header__navigation">
+					<a href="#" class="header__navigation-link">Početna</a>
+					<a href="#" class="header__navigation-link">Kako funkcioniše</a>
+					<a href="#" class="header__navigation-link">Cenovnik</a>
+					<a href="#" class="header__navigation-link">Primeri</a>
+					<a href="#" class="header__navigation-link">Kontakt</a>
+				</div>
 				<a href="" class="header__burger">
 					<span></span>
 					<span></span>
@@ -149,7 +155,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="ctaCard">
+					<div class="ctaCard" id="homepage-stepsCta">
 						<p class="ctaCard__text">Pogledajte korake detaljnije</p>
 						<a href="#" class="ctaCard__btn button button-full">Detaljnije</a>
 					</div>
@@ -160,7 +166,7 @@
 					<div class="textCard">
 						<h2 class="textCard__heading">Moderan dizajn</h2>
 						<p class="textCard__text">
-							Pogledajte neke sajtove koje imamo u ponudi
+							Pogledajte primere nekih sajtova koje imamo u ponudi
 						</p>
 					</div>
 					<div class="designsContainer">
@@ -208,62 +214,64 @@
 			</div>
 		</div>
 
-		<!-- Footer -->
-		<footer class="footer">
-			<div class="footer__content">
-				<div class="footer__content-basicInfo">
-					<a href="">
-						<img src="./img/clicking.svg" alt="">
-						<p>Iznajmi sajt</p>
-					</a>
-				<div class="footerEmail">
-					<p>Email: lazardnikolic@gmail.com</p>
-				</div>
-				<div class="socialMedia">
-					<a href="">
-						<img src="./img/rocket.svg" alt="">
-					</a>
-					<a href="">
-						<img src="./img/piggy-bank.svg" alt="">
-					</a>
-				</div>	
-					
-				</div>
-				<div class="footer__content-moreInfo">
-					<h2>Informacije</h2>
-					<a href="">
-						<p>Cenovnik</p>
-					</a>
-					<a href="">
-						<p>Prednosti</p>
-					</a>
-					<a href="">
-						<p>Teme</p>
-					</a>
-					<a href="">
-						<p>Kontaktirajte nas</p>
-					</a>
-					
-				</div>
-				<div class="footer__content-ourPackages">
-					<h2>Nasi paketi</h2>
-					<a href="">
-						<p>Basic paket</p>
-					</a>
-					<a href="">
-						<p>Premium paket</p>
-					</a>
-					<a href="">
-						<p>Ultimate paket</p>
-					</a>
-					<a href="">
-						<p>Shop paket</p>
-					</a>
-				</div>
-				<div>
-					<p>Copyright &copy; 2020 Iznajmisajt.rs<p></p>
-				</div>
+		<div class="container" id="footerContainer">
+			<div class="container__content">
+				<footer class="footer">
+					<div class="footer__content">
+						<div class="footer__content-basicInfo">
+							<a class="footer__content-basicInfo--logo" href="">
+								<img src="./img/clicking.svg" alt="" />
+								<p>Iznajmi sajt</p>
+							</a>
+							<h2>Kontakt informacije</h2>
+							<div class="footerEmail">
+								<p>Email: iznajmisajt@gmail.com</p>
+							</div>
+							<div class="socialMedia">
+								<a href="">
+									<img src="./img/instagram.svg" alt="" />
+								</a>
+								<a href="">
+									<img src="./img/facebook.svg" alt="" />
+								</a>
+							</div>
+						</div>
+						<div class="footer__content-moreInfo">
+							<h2>Informacije</h2>
+							<a href="">
+								<p>Cenovnik</p>
+							</a>
+							<a href="">
+								<p>Prednosti</p>
+							</a>
+							<a href="">
+								<p>Teme</p>
+							</a>
+							<a href="">
+								<p>Kontaktirajte nas</p>
+							</a>
+						</div>
+						<div class="footer__content-ourPackages">
+							<h2>Naši paketi</h2>
+							<a href="">
+								<p>Basic paket</p>
+							</a>
+							<a href="">
+								<p>Premium paket</p>
+							</a>
+							<a href="">
+								<p>Ultimate paket</p>
+							</a>
+							<a href="">
+								<p>Shop paket</p>
+							</a>
+						</div>
+						<div class="footer__content-copyright">
+							<p>Copyright &copy; 2020 Iznajmisajt.rs</p>
+						</div>
+					</div>
+				</footer>
 			</div>
-		</footer>
+		</div>
 	</body>
 </html>

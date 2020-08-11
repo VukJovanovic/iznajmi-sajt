@@ -1,24 +1,46 @@
+#homepage-welcome {
+	min-height: 100vh;
+}
+
 .welcomeCard {
 	display: flex;
 	padding: 15rem 0 5rem 0;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-
 	&__heading {
 		font-size: $font-size-big;
 		margin-bottom: 2rem;
+
+		@media only screen and (min-width: 1024px) {
+			font-size: 5rem;
+			line-height: 6rem;
+			margin-bottom: 3rem;
+		}
 	}
 	&__subheading {
 		text-align: center;
 		font-size: $font-size-normal;
 		margin-bottom: 1rem;
+		@media only screen and (min-width: 1024px) {
+			font-size: 2rem;
+			line-height: 2.5rem;
+		}
 	}
 	&__text {
 		font-size: $font-size-small;
 		text-align: center;
+
+		@media only screen and (min-width: 1024px) {
+			font-size: 1.8rem;
+			line-height: 2.5rem;
+		}
 	}
 	&__cta {
 		margin-top: 2rem;
+
+		@media only screen and (min-width: 1024px) {
+			margin-top: 3rem;
+		}
 	}
 }

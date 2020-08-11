@@ -10,6 +10,7 @@ h2 {
 	font-weight: $font-weight-bold;
 	text-align: center;
 	line-height: 4rem;
+	max-width: 50rem;
 }
 
 h3 {
@@ -20,5 +21,12 @@ h3 {
 p {
 	font-family: $font-family-secondary;
 	font-weight: $font-weight-light;
+	font-size: $font-size-small;
 	line-height: 2.2rem;
+	max-width: 40rem;
+}
+
+a {
+	font-family: $font-family-primary;
+	font-weight: $font-weight-light;
 }
