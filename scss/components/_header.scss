@@ -1,10 +1,9 @@
 .header {
-	// ********
-	// Header layout
-	// ********
 	background-color: $color-tertiary;
 	position: fixed;
-	// box-shadow: 0px 3px 15px rgba(#000000, 0.2);
+	z-index: $header-z-index;
+	box-shadow: 0px 3px 15px rgba(#000000, 0.2);
+
 	// ********
 	// Header content
 	// ********

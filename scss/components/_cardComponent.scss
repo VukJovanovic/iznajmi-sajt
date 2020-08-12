@@ -1,12 +1,30 @@
-.stepCard {
+.card {
+	width: 100%;
+	min-height: 30rem;
 	background-color: $color-secondary;
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
 	align-items: center;
-	padding: 4rem 2rem;
+	padding: 3rem 2rem;
 	border-radius: 20px;
-	box-shadow: 0px 3px 15px rgba(#000000, 0.2);
-	margin-bottom: 3rem;
+
+	@media only screen and (min-width: 450px) {
+		max-width: 40rem;
+	}
+
+	&__image {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 1.5rem;
+		border-radius: 50%;
+		margin-bottom: 2rem;
+
+		img {
+			width: 4rem;
+		}
+	}
 
 	&__title {
 		font-size: $font-size-normal;
@@ -28,22 +46,24 @@
 			line-height: 2.5rem;
 		}
 	}
+}
 
-	&__image {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		padding: 1.5rem;
-		border-radius: 50%;
-		margin-bottom: 2rem;
+// Dark card styles
+.card-dark {
+	box-shadow: 0px 5px 12px rgba($color-button-one, 0.6);
+	background: linear-gradient(
+		to bottom right,
+		$color-button-one,
+		$color-button-two
+	);
+}
+
+// Light card styles
+.card-light {
+	box-shadow: 0px 2px 12px rgba(#000000, 0.1);
+
+	.card__image {
 		box-shadow: 0px 5px 10px rgba($color-button-one, 0.5);
 		background: linear-gradient(to right, $color-button-one, $color-button-two);
-		img {
-			width: 4rem;
-		}
-	}
-
-	&-width-1 {
-		max-width: 46rem;
 	}
 }

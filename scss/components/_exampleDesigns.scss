@@ -1,9 +1,3 @@
-#homepage-designs {
-	.textCard {
-		padding-top: 5rem;
-	}
-}
-
 .designsContainer {
 	display: grid;
 	grid-template-columns: 1fr;
@@ -36,7 +30,7 @@
 		}
 
 		@media only screen and (min-width: 1300px) {
-			width: 35rem;
+			width: 30rem;
 		}
 
 		&:hover {

@@ -1,7 +1,6 @@
 .cardContainer {
 	display: grid;
 	grid-template-columns: 1fr;
-
 	@media only screen and (min-width: 700px) {
 		grid-template-columns: 1fr 1fr;
 		grid-column-gap: 3rem;
@@ -17,17 +16,33 @@
 .cardContainer-2 {
 	@media only screen and (min-width: 1024px) {
 		grid-template-columns: 1fr max-content max-content 1fr;
+		.stepCard:nth-child(1) {
+			grid-column: 2 / 3;
+		}
+		.stepCard:nth-child(2) {
+			grid-column: 3 / 4;
+		}
+		.stepCard:nth-child(3) {
+			grid-column: 2 / 3;
+		}
+		.stepCard:nth-child(4) {
+			grid-column: 3 / 4;
+		}
 	}
-	.stepCard:nth-child(1) {
-		grid-column: 2 / 3;
+}
+
+.cardContainer-3 {
+	@media only screen and (min-width: 700px) {
+		.stepCard:nth-child(3) {
+			grid-column: 1 / -1;
+			max-width: 45rem;
+			justify-self: center;
+		}
 	}
-	.stepCard:nth-child(2) {
-		grid-column: 3 / 4;
-	}
-	.stepCard:nth-child(3) {
-		grid-column: 2 / 3;
-	}
-	.stepCard:nth-child(4) {
-		grid-column: 3 / 4;
+
+	@media only screen and (min-width: 1150px) {
+		.stepCard:nth-child(3) {
+			grid-column: 3 / 4;
+		}
 	}
 }

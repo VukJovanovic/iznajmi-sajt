@@ -1,0 +1,13 @@
+.benefitsContainer {
+	display: grid;
+	width: 100%;
+	grid-template-columns: 1fr;
+	justify-items: center;
+	grid-row-gap: 2rem;
+
+	@media only screen and (min-width: 1024px) {
+		grid-template-columns: max-content max-content;
+		grid-gap: 3rem;
+		justify-content: center;
+	}
+}

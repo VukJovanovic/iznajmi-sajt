@@ -1,0 +1,51 @@
+#homepage-welcome {
+	padding: 15rem 0 5rem 0;
+
+	.imageComponent {
+		margin: 7rem 0 2rem 0;
+	}
+}
+
+#homepage-benefits {
+	.textComponent {
+		margin-bottom: 3rem;
+
+		@media only screen and (min-width: 1024px) {
+			margin-bottom: 4rem;
+		}
+	}
+}
+
+#homepage-price {
+	padding: 7rem 0;
+
+	.imageComponent {
+		margin: 7rem 0 2rem 0;
+	}
+}
+
+#homepage-steps {
+	.textComponent {
+		margin-bottom: 3rem;
+	}
+
+	.ctaCard {
+		margin-top: 3rem;
+	}
+}
+
+#homepage-designs {
+	padding: 7rem 0;
+
+	.textComponent {
+		margin-bottom: 3rem;
+	}
+
+	.ctaCard {
+		margin-top: 3rem;
+	}
+}
+
+#homepage-requestInfo {
+	padding: 7rem 0;
+}

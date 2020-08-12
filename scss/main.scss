@@ -6,16 +6,20 @@
 // layout scss files
 @import './layout/grid';
 
+// page scss files
+@import './pages/homepage';
+
 // component scss files
 @import './components/header';
-@import './components/welcomeCard';
+@import './components/welcomeComponent';
+@import './components/textComponent';
 @import './components/buttons';
-@import './components/textCard';
-@import './components/stepCard';
-@import './components/imageContainer';
+@import './components/benefitsContainer';
+@import './components/stepsContainer';
+@import './components/cardComponent';
+@import './components/imageComponent';
 @import './components/ctaCard';
 @import './components/exampleDesigns';
-@import './components/cardContainer';
 @import './components/fullImg';
 @import './components/footer';
 

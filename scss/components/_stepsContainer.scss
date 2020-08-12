@@ -1,0 +1,22 @@
+.stepsContainer {
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-row-gap: 2rem;
+	justify-items: center;
+	@media only screen and (min-width: 700px) {
+		grid-template-columns: 1fr 1fr;
+		grid-column-gap: 3rem;
+		justify-content: center;
+		.card:nth-child(3) {
+			grid-column: 1 / 3;
+		}
+	}
+
+	@media only screen and (min-width: 1024px) {
+		grid-template-columns: 1fr 1fr 1fr;
+		.card:nth-child(3) {
+			grid-column: 3 / 4;
+		}
+	}
+}
