@@ -614,8 +614,6 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-line-pack: center;
-      align-content: center;
 }
 .footer__content-basicInfo .socialMedia a {
   margin-top: 0.5rem;
