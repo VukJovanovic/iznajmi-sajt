@@ -380,6 +380,9 @@ a {
 .stepCard__image img {
   width: 4rem;
 }
+.stepCard-width-1 {
+  max-width: 46rem;
+}
 
 .imageContainer {
   margin-top: 5rem;
@@ -491,7 +494,7 @@ a {
 }
 @media only screen and (min-width: 1300px) {
   .designCard img {
-    width: 40rem;
+    width: 35rem;
   }
 }
 .designCard img:hover {
@@ -511,9 +514,28 @@ a {
   }
 }
 @media only screen and (min-width: 1150px) {
-  .cardContainer {
+  .cardContainer-3 {
     grid-template-columns: 1fr 1fr 1fr;
   }
+}
+
+@media only screen and (min-width: 1024px) {
+  .cardContainer-2 {
+    grid-template-columns: 1fr -webkit-max-content -webkit-max-content 1fr;
+    grid-template-columns: 1fr max-content max-content 1fr;
+  }
+}
+.cardContainer-2 .stepCard:nth-child(1) {
+  grid-column: 2/3;
+}
+.cardContainer-2 .stepCard:nth-child(2) {
+  grid-column: 3/4;
+}
+.cardContainer-2 .stepCard:nth-child(3) {
+  grid-column: 2/3;
+}
+.cardContainer-2 .stepCard:nth-child(4) {
+  grid-column: 3/4;
 }
 
 #fullImg {
@@ -592,6 +614,8 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 .footer__content-basicInfo .socialMedia a {
   margin-top: 0.5rem;
