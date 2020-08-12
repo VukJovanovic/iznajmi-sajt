@@ -1,13 +1,13 @@
 .designsContainer {
 	display: grid;
 	grid-template-columns: 1fr;
-
 	@media only screen and (min-width: 700px) {
 		grid-template-columns: 1fr 1fr;
 		grid-column-gap: 2rem;
 	}
 	@media only screen and (min-width: 1150px) {
 		grid-template-columns: 1fr 1fr 1fr;
+		justify-items: center;
 	}
 }
 

@@ -1,0 +1,38 @@
+.sidebar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	z-index: $sidebar-z-index;
+	background-color: $color-secondary;
+	display: none;
+	flex-direction: column;
+	opacity: 0;
+	padding: 2.5rem 2rem;
+	overflow: hidden;
+	&__close {
+		opacity: 0;
+		align-self: flex-end;
+		transform: translateY(-20px);
+		img {
+			width: 3rem;
+		}
+	}
+
+	.sidebarNavigation {
+		margin: auto;
+
+		&__item {
+			margin-bottom: 2rem;
+			text-align: center;
+			opacity: 0;
+			transform: translateX(-20px);
+		}
+		&__link {
+			font-size: $font-size-large;
+			color: $font-color-primary;
+			font-weight: $font-weight-bold;
+		}
+	}
+}

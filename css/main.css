@@ -120,6 +120,11 @@ a {
 #homepage-welcome .imageComponent {
   margin: 7rem 0 2rem 0;
 }
+@media only screen and (min-width: 1024px) {
+  #homepage-welcome .imageComponent {
+    margin: 9rem 0 6rem 0;
+  }
+}
 
 #homepage-benefits .textComponent {
   margin-bottom: 3rem;
@@ -129,6 +134,11 @@ a {
     margin-bottom: 4rem;
   }
 }
+@media only screen and (min-width: 1024px) {
+  #homepage-benefits {
+    margin: 0 0 4rem 0;
+  }
+}
 
 #homepage-price {
   padding: 7rem 0;
@@ -136,9 +146,19 @@ a {
 #homepage-price .imageComponent {
   margin: 7rem 0 2rem 0;
 }
+@media only screen and (min-width: 1024px) {
+  #homepage-price .imageComponent {
+    margin: 9rem 0 4rem 0;
+  }
+}
 
 #homepage-steps .textComponent {
   margin-bottom: 3rem;
+}
+@media only screen and (min-width: 1024px) {
+  #homepage-steps .textComponent {
+    margin-bottom: 4rem;
+  }
 }
 #homepage-steps .ctaCard {
   margin-top: 3rem;
@@ -150,12 +170,28 @@ a {
 #homepage-designs .textComponent {
   margin-bottom: 3rem;
 }
+@media only screen and (min-width: 1024px) {
+  #homepage-designs .textComponent {
+    margin: 0rem 0 4rem 0;
+  }
+}
 #homepage-designs .ctaCard {
   margin-top: 3rem;
+}
+@media only screen and (min-width: 1024px) {
+  #homepage-designs {
+    margin: 4rem 0 0rem 0;
+    padding-bottom: 0rem;
+  }
 }
 
 #homepage-requestInfo {
   padding: 7rem 0;
+}
+@media only screen and (min-width: 1024px) {
+  #homepage-requestInfo {
+    margin: 4rem 0 4rem 0;
+  }
 }
 
 .header {
@@ -215,6 +251,51 @@ a {
 }
 .header__burger span:last-child {
   margin-bottom: 0;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 21;
+  background-color: #fff;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  opacity: 0;
+  padding: 2.5rem 2rem;
+  overflow: hidden;
+}
+.sidebar__close {
+  opacity: 0;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  -webkit-transform: translateY(-20px);
+      -ms-transform: translateY(-20px);
+          transform: translateY(-20px);
+}
+.sidebar__close img {
+  width: 3rem;
+}
+.sidebar .sidebarNavigation {
+  margin: auto;
+}
+.sidebar .sidebarNavigation__item {
+  margin-bottom: 2rem;
+  text-align: center;
+  opacity: 0;
+  -webkit-transform: translateX(-20px);
+      -ms-transform: translateX(-20px);
+          transform: translateX(-20px);
+}
+.sidebar .sidebarNavigation__link {
+  font-size: 2rem;
+  color: #000;
+  font-weight: 700;
 }
 
 .welcomeComponent {
@@ -555,6 +636,7 @@ a {
 @media only screen and (min-width: 1150px) {
   .designsContainer {
     grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
   }
 }
 
