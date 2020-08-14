@@ -21,7 +21,7 @@
 	}
 
 	.sidebarNavigation {
-		margin: auto;
+		margin-top: 8rem;
 
 		&__item {
 			margin-bottom: 2rem;
@@ -30,9 +30,9 @@
 			transform: translateX(-20px);
 		}
 		&__link {
-			font-size: $font-size-large;
+			font-size: $font-size-larger;
 			color: $font-color-primary;
-			font-weight: $font-weight-bold;
+			font-weight: $font-weight-normal;
 		}
 	}
 }

@@ -1,0 +1,32 @@
+#price-welcome {
+	padding: 15rem 0 5rem 0;
+
+	.welcomeComponent__subheading {
+		margin: 1.5rem 0 0 0;
+	}
+
+	@media only screen and (min-width: 1024px) {
+		margin: 0 0 4rem 0;
+	}
+}
+
+.pricingContact {
+	display: flex;
+	justify-content: center;
+	margin: 4rem 0 4rem 0;
+	&__text {
+		text-align: center;
+	}
+
+	@media only screen and (min-width: 1024px) {
+		margin: 9rem 0;
+	}
+}
+
+#price-options {
+	padding: 4rem 0;
+
+	@media only screen and (min-width: 1024px) {
+		margin: 5rem 0 5rem 0;
+	}
+}

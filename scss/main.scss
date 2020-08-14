@@ -8,6 +8,7 @@
 
 // page scss files
 @import './pages/homepage';
+@import './pages/pricepage';
 
 // component scss files
 @import './components/header';
@@ -23,5 +24,8 @@
 @import './components/exampleDesigns';
 @import './components/fullImg';
 @import './components/footer';
+@import './components/pricingCardsContainer';
+@import './components/pricingCard';
+@import './components/options';
 
 // sections scss files

@@ -1,0 +1,28 @@
+.optionsContainer {
+	margin-top: 4rem;
+}
+
+.optionsItem {
+	display: flex;
+	flex-direction: column;
+	color: $font-color-primary;
+	margin-bottom: 2rem;
+	max-width: 60rem;
+	&__heading {
+		border: 1px solid $color-button-one;
+		padding: 2rem;
+		border-radius: 10px;
+		h3 {
+			font-family: $font-family-primary;
+			font-size: $font-size-small;
+			font-weight: $font-weight-normal;
+		}
+	}
+	&__body {
+		width: 100%;
+		opacity: 0;
+		display: none;
+		max-height: 0;
+		padding: 1rem;
+	}
+}

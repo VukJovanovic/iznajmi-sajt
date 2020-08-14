@@ -30,4 +30,16 @@ const hideSidebar = () => {
 	});
 };
 
-export { showSidebar, hideSidebar };
+// options animations
+const showOption = (body) => {
+	TweenMax.to(body, 0.5, {
+		display: 'block',
+		height: 'max-content',
+		opacity: 1,
+	});
+};
+const hideOption = (body) => {
+	TweenMax.to(body, 0.5, { display: 'none', height: '0', opacity: 0 });
+};
+
+export { showSidebar, hideSidebar, showOption, hideOption };
