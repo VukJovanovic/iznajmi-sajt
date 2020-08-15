@@ -30,3 +30,34 @@
 	font-weight: $font-weight-light;
 	border-bottom: 1px solid $color-button-one;
 }
+
+.floatingButton {
+	position: fixed;
+	bottom: 2rem;
+	right: 2rem;
+	border-radius: 10px;
+	display: none;
+	width: 5rem;
+	height: 5rem;
+	justify-content: center;
+	align-items: center;
+	background: linear-gradient(to right, $color-button-one, $color-button-two);
+	box-shadow: 0px 5px 10px rgba($color-button-one, 0.5);
+	z-index: $floatingBtn-z-index;
+	transition: 0.4s ease;
+	opacity: 0;
+	@media only screen and (min-width: 1024px) {
+		bottom: 5rem;
+		right: 5rem;
+	}
+
+	img {
+		transform: rotate(180deg) translateY(2px);
+		width: 3rem;
+	}
+}
+
+.floatingButtonShow {
+	display: flex;
+	opacity: 1;
+}

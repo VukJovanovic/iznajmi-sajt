@@ -27,5 +27,9 @@
 				]
 			}
 		}
+	},
+	"dependencies": {
+		"jump.js": "^1.0.2",
+		"underscore": "^1.10.2"
 	}
 }

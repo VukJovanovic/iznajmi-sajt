@@ -19,6 +19,26 @@
 	&__logo {
 		font-family: $font-family-primary;
 		font-size: 1.8rem;
+		display: flex;
+		align-items: center;
+		color: $font-color-primary;
+
+		&-icon {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 5rem;
+			height: 5rem;
+			color: $font-color-secondary;
+			border-radius: 100%;
+			margin-right: 1rem;
+			background: linear-gradient(
+				to bottom right,
+				$color-button-one,
+				$color-button-two
+			);
+			box-shadow: 0px 5px 10px rgba($color-button-one, 0.5);
+		}
 	}
 
 	&__navigation {

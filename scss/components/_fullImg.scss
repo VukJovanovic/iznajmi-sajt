@@ -17,3 +17,13 @@
 		width: 100%;
 	}
 }
+
+#fullImg.fullImgWhite {
+	&::before {
+		background: linear-gradient(
+			to bottom,
+			$color-secondary 10%,
+			transparent 100%
+		);
+	}
+}

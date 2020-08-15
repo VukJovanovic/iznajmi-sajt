@@ -12,7 +12,12 @@
          -->
 		<header class="header">
 			<div class="header__content">
-				<div class="header__logo">Iznajmi sajt</div>
+				<a href="/" class="header__logo">
+					<div class="header__logo-icon">
+						IS
+					</div>
+					Iznajmi sajt
+				</a>
 				<div class="header__navigation">
 					<a href="index.html" class="header__navigation-link">Početna</a>
 					<a href="#" class="header__navigation-link">Kako funkcioniše</a>
@@ -27,6 +32,13 @@
 				</a>
 			</div>
 		</header>
+
+		<!-- 
+            ********** Floating button *************
+        -->
+		<a href="#" class="floatingButton">
+			<img src="./img/arrow-down.svg" alt="" />
+		</a>
 
 		<!-- 
             ********** SIDEBAR *************
@@ -175,86 +187,56 @@
 							koji želite da platite fiksno pogledajte neke od opcija ispod.
 						</p>
 					</div>
-					<div class="optionsContainer">
-						<a href="#" class="optionsItem" id="optionLanding">
-							<div class="optionsItem__heading">
-								<h3>Landing page</h3>
+
+					<ul class="collapsible expandable">
+						<li>
+							<div class="collapsible-header">
+								<h3 class="collapsible__title">Landing page</h3>
 							</div>
-							<div class="optionsItem__body" id="optionLandingBody">
-								<p>
-									Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
-									modi quam, autem deleniti iure doloremque impedit error
-									mollitia dignissimos velit?
-								</p>
+							<div class="collapsible-body">
+								<div class="collapsible__text">
+									<p>
+										Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+										Velit enim nulla consequatur? At, eligendi molestias?
+									</p>
+								</div>
 							</div>
-						</a>
-						<a href="#" class="optionsItem" id="optionBlog">
-							<div class="optionsItem__heading">
-								<h3>Web sajt / blog</h3>
+						</li>
+						<li>
+							<div class="collapsible-header">
+								<h3 class="collapsible__title">Web sajt / blog</h3>
 							</div>
-							<div class="optionsItem__body" id="optionLandingBody">
-								<p>
-									Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
-									modi quam, autem deleniti iure doloremque impedit error
-									mollitia dignissimos velit?
-								</p>
+							<div class="collapsible-body">
+								<div class="collapsible__text">
+									<p>
+										Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+										Velit enim nulla consequatur? At, eligendi molestias?
+									</p>
+								</div>
 							</div>
-						</a>
-						<a href="#" class="optionsItem" id="optionShop">
-							<div class="optionsItem__heading">
-								<h3>Web aplikacija / shop</h3>
+						</li>
+						<li>
+							<div class="collapsible-header">
+								<h3 class="collapsible__title">Web aplikacija / shop</h3>
 							</div>
-							<div class="optionsItem__body" id="optionLandingBody">
-								<p>
-									Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
-									modi quam, autem deleniti iure doloremque impedit error
-									mollitia dignissimos velit?
-								</p>
+							<div class="collapsible-body">
+								<div class="collapsible__text">
+									<p>
+										Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+										Velit enim nulla consequatur? At, eligendi molestias?
+									</p>
+								</div>
 							</div>
-						</a>
-					</div>
+						</li>
+					</ul>
 				</section>
 			</div>
 		</div>
-		<!-- 
 
-			Stranice: 4
-			Izmene: 2 mesecno (tekst i slike)
-			Besplatna izrada sajta
-			Povezivanje sa vasim domenom
-			Besplatan hosting
-			Kontakt forma
-			Besplatno odrzavanje
-			Google analytics
-
-			Premium
-			Cena: 5990
-			Stranice: Neograniceno
-			Izmene: 5 mesecno (tekst i slike)
-			Povezivanje sa domenom
-			Besplatna izrada web sajta
-			Besplatan domen
-			Besplatan hosting
-			Besplatno odrzavanje
-			Kontakt Forma
-			Seo ( 20 kljucne reci )
-			Google analytics
-
-			Ultimate
-			Cena: 11990
-			Stranice: Neograniceno
-			Izmene: Neograniceno 
-			Povezivanje sa domenom
-			Besplatna izrada web sajta
-			Besplatan domen
-			Besplatan hosting
-			Besplatno odrzavanje
-			Blog (CMS) 
-			Kontakt Forma
-			Seo ( 20 kljucne reci )
-			Google analytics
-
-		 -->
+		<!-- Full width image -->
+		<section id="fullImg" class="fullImgWhite">
+			<img src="./img/cornerstone-2700x1688.jpg" alt="" />
+		</section>
 
 		<!-- FOOTER -->
 		<div class="container" id="footerContainer">
@@ -262,9 +244,11 @@
 				<footer class="footer">
 					<div class="footer__content">
 						<div class="footer__content-basicInfo">
-							<a class="footer__content-basicInfo--logo" href="">
-								<img src="./img/clicking.svg" alt="" />
-								<p>Iznajmi sajt</p>
+							<a href="/" class="header__logo footerLogo">
+								<div class="header__logo-icon">
+									IS
+								</div>
+								Iznajmi sajt
 							</a>
 							<h2>Kontakt informacije</h2>
 							<div class="footerEmail">
@@ -318,6 +302,16 @@
 		</div>
 
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+		<script>
+			document.addEventListener('DOMContentLoaded', function () {
+				var elems = document.querySelectorAll('.collapsible.expandable');
+				var instances = M.Collapsible.init(elems, {
+					accordion: false,
+				});
+			});
+		</script>
 		<script src="./js/bundle.js"></script>
 	</body>
 </html>

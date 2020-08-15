@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="57" height="57" viewBox="0 0 57 57">
+  <g id="Group_2" data-name="Group 2" transform="translate(-23 -14)">
+    <g id="Component_1_1" data-name="Component 1 – 1" transform="translate(23 14)">
+      <g id="Ellipse_1" data-name="Ellipse 1" stroke="#000" stroke-width="2">
+        <circle cx="28.5" cy="28.5" r="28.5" stroke="none"/>
+        <circle cx="28.5" cy="28.5" r="27.5" fill="none"/>
+      </g>
+      <text id="is" transform="translate(19 39)" fill="#fff" font-size="33" font-family="Oswald-Regular, Oswald">
+        <tspan x="0" y="0">is</tspan>
+      </text>
+    </g>
+  </g>
+</svg>

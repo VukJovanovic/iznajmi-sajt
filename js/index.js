@@ -1,4 +1,6 @@
-import { showSidebar, hideSidebar, showOption, hideOption } from './animations';
+import _ from 'underscore';
+import jump from 'jump.js';
+import { showSidebar, hideSidebar } from './animations';
 
 // Mobile navigation
 const burgerButton = document.querySelector('.header__burger');
@@ -18,22 +20,25 @@ if (sidebarCloseBtn) {
 	});
 }
 
-// **************
-// Options functionality
-// **************
-const landingOption = document.querySelector('#optionLanding');
-const landingOptionBody = document.querySelector('#optionLandingBody');
+// scroll top button functionality
+const floatingBtn = document.querySelector('.floatingButton');
+const checkScroll = _.throttle(() => {
+	// Detect scroll position
+	let scrollPosition = Math.round(window.scrollY);
 
-if (landingOption) {
-	landingOption.addEventListener('click', (e) => {
+	// Show button that scrolls on top of the page when you click it
+	if (scrollPosition > 50) {
+		floatingBtn.classList.add('floatingButtonShow');
+	} else {
+		floatingBtn.classList.remove('floatingButtonShow');
+	}
+}, 300);
+
+window.addEventListener('scroll', checkScroll);
+
+if (floatingBtn) {
+	floatingBtn.addEventListener('click', (e) => {
 		e.preventDefault();
-
-		if (landingOption.classList.contains('optionActive')) {
-			hideOption(landingOptionBody);
-			landingOption.classList.remove('optionActive');
-		} else {
-			showOption(landingOptionBody);
-			landingOption.classList.add('optionActive');
-		}
+		jump('.container');
 	});
 }

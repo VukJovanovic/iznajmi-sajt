@@ -54,7 +54,6 @@ p {
   font-weight: 300;
   font-size: 1.6rem;
   line-height: 2.2rem;
-  max-width: 40rem;
 }
 
 a {
@@ -220,6 +219,7 @@ a {
   margin: 4rem 0 4rem 0;
 }
 .pricingContact__text {
+  max-width: 45rem;
   text-align: center;
 }
 @media only screen and (min-width: 1024px) {
@@ -229,11 +229,11 @@ a {
 }
 
 #price-options {
-  padding: 4rem 0;
+  padding: 4rem 0 0 0;
 }
 @media only screen and (min-width: 1024px) {
   #price-options {
-    margin: 5rem 0 5rem 0;
+    margin: 5rem 0 0 0;
   }
 }
 
@@ -260,6 +260,34 @@ a {
 .header__logo {
   font-family: "Oswald", sans-serif;
   font-size: 1.8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #000;
+}
+.header__logo-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 5rem;
+  height: 5rem;
+  color: #fff;
+  border-radius: 100%;
+  margin-right: 1rem;
+  background: -webkit-gradient(linear, left top, right bottom, from(#4c23c2), to(#6146c2));
+  background: -o-linear-gradient(top left, #4c23c2, #6146c2);
+  background: linear-gradient(to bottom right, #4c23c2, #6146c2);
+  -webkit-box-shadow: 0px 5px 10px rgba(76, 35, 194, 0.5);
+          box-shadow: 0px 5px 10px rgba(76, 35, 194, 0.5);
 }
 .header__navigation {
   display: none;
@@ -338,6 +366,17 @@ a {
   -webkit-transform: translateY(-20px);
       -ms-transform: translateY(-20px);
           transform: translateY(-20px);
+  margin-right: 0.3rem;
+}
+@media only screen and (min-width: 475px) {
+  .sidebar__close {
+    margin-right: 1.3rem;
+  }
+}
+@media only screen and (min-width: 700px) {
+  .sidebar__close {
+    margin-right: 3.3rem;
+  }
 }
 .sidebar__close img {
   width: 3rem;
@@ -399,6 +438,7 @@ a {
 .welcomeComponent__text {
   font-size: 1.6rem;
   text-align: center;
+  max-width: 45rem;
 }
 @media only screen and (min-width: 1024px) {
   .welcomeComponent__text {
@@ -441,6 +481,7 @@ a {
 .textComponent__text {
   font-size: 1.6rem;
   text-align: center;
+  max-width: 45rem;
 }
 @media only screen and (min-width: 1024px) {
   .textComponent__text {
@@ -499,6 +540,51 @@ a {
   font-size: 1.8rem;
   font-weight: 300;
   border-bottom: 1px solid #4c23c2;
+}
+
+.floatingButton {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  border-radius: 10px;
+  display: none;
+  width: 5rem;
+  height: 5rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: -webkit-gradient(linear, left top, right top, from(#4c23c2), to(#6146c2));
+  background: -o-linear-gradient(left, #4c23c2, #6146c2);
+  background: linear-gradient(to right, #4c23c2, #6146c2);
+  -webkit-box-shadow: 0px 5px 10px rgba(76, 35, 194, 0.5);
+          box-shadow: 0px 5px 10px rgba(76, 35, 194, 0.5);
+  z-index: 19;
+  -webkit-transition: 0.4s ease;
+  -o-transition: 0.4s ease;
+  transition: 0.4s ease;
+  opacity: 0;
+}
+@media only screen and (min-width: 1024px) {
+  .floatingButton {
+    bottom: 5rem;
+    right: 5rem;
+  }
+}
+.floatingButton img {
+  -webkit-transform: rotate(180deg) translateY(2px);
+      -ms-transform: rotate(180deg) translateY(2px);
+          transform: rotate(180deg) translateY(2px);
+  width: 3rem;
+}
+
+.floatingButtonShow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 1;
 }
 
 .benefitsContainer {
@@ -675,6 +761,7 @@ a {
 .ctaCard__text {
   font-size: 1.6rem;
   margin-bottom: 1rem;
+  max-width: 45rem;
 }
 @media only screen and (min-width: 1024px) {
   .ctaCard__text {
@@ -758,6 +845,12 @@ a {
 }
 #fullImg img {
   width: 100%;
+}
+
+#fullImg.fullImgWhite::before {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #fff), to(transparent));
+  background: -o-linear-gradient(top, #fff 10%, transparent 100%);
+  background: linear-gradient(to bottom, #fff 10%, transparent 100%);
 }
 
 #footerContainer {
@@ -852,6 +945,9 @@ a {
 }
 .footer__content-copyright p {
   font-size: 1.2rem;
+}
+.footer__content .footerLogo {
+  color: #fff;
 }
 
 .pricingCardsContainer {
@@ -962,6 +1058,95 @@ a {
   display: none;
   max-height: 0;
   padding: 1rem;
+}
+
+.collapsible {
+  max-width: 70rem;
+  margin: 4rem auto 0 auto;
+}
+.collapsible li {
+  margin-bottom: 2rem;
+}
+.collapsible__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+.collapsible__text p {
+  padding: 1rem 1rem;
+}
+
+.collapsible-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  line-height: 1.5;
+  padding: 2rem 1rem;
+  border: 1px solid #4c23c2;
+  border-radius: 10px;
+}
+.collapsible-header:focus {
+  outline: 0;
+}
+
+.keyboard-focused .collapsible-header:focus {
+  background-color: #eee;
+}
+
+.collapsible-body {
+  display: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.sidenav .collapsible,
+.sidenav.fixed .collapsible {
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.sidenav .collapsible li,
+.sidenav.fixed .collapsible li {
+  padding: 0;
+}
+.sidenav .collapsible-header,
+.sidenav.fixed .collapsible-header {
+  background-color: transparent;
+  border: none;
+  line-height: inherit;
+  height: inherit;
+}
+.sidenav .collapsible-header:hover,
+.sidenav.fixed .collapsible-header:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.sidenav .collapsible-header i,
+.sidenav.fixed .collapsible-header i {
+  line-height: inherit;
+}
+.sidenav .collapsible-body,
+.sidenav.fixed .collapsible-body {
+  border: 0;
+}
+.collapsible.popout {
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.collapsible.popout > li {
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  margin: 0 24px;
+  -webkit-transition: margin 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -o-transition: margin 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: margin 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.collapsible.popout > li.active {
+  -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+          box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+  margin: 16px 0;
 }
 
 /*# sourceMappingURL=/main.css.map */

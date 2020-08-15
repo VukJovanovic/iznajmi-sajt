@@ -15,6 +15,14 @@
 		opacity: 0;
 		align-self: flex-end;
 		transform: translateY(-20px);
+		margin-right: 0.3rem;
+
+		@media only screen and (min-width: 475px) {
+			margin-right: 1.3rem;
+		}
+		@media only screen and (min-width: 700px) {
+			margin-right: 3.3rem;
+		}
 		img {
 			width: 3rem;
 		}
