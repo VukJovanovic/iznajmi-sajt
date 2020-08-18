@@ -1,0 +1,15 @@
+#stepsExtendedContainer{
+    .textComponent{
+        margin-bottom: 2rem;
+        &__subheading{
+            font-size: $font-size-normal;
+            font-weight: $font_weight-normal;
+        }
+    }
+}
+
+#howitworks-options{
+    .textComponent__heading{
+        font-size: $font-size-big;
+    }
+}

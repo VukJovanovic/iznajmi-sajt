@@ -1,0 +1,42 @@
+#howitworks-welcome {
+	padding: 15rem 0 5rem 0;
+
+	.imageComponent {
+		margin: 7rem 0 2rem 0;
+
+		@media only screen and (min-width: 1024px) {
+			margin: 9rem 0 6rem 0;
+		}
+	}
+}
+
+#howitworks-steps {
+    margin: 0 0 5rem 0;
+	.textComponent {
+		margin-bottom: 3rem;
+
+		@media only screen and (min-width: 1024px) {
+			margin-bottom: 4rem;
+		}
+	}
+
+	.ctaCard {
+		margin-top: 3rem;
+    }
+    
+    @media only screen and (min-width: 1024px) {
+        margin: 0 0 9rem 0;
+    }
+}
+
+#stepsExtendedContainer{
+    padding: 5rem 0 5rem 0;
+}
+
+#howitworks-options{
+	margin: 5rem 0 5rem 0;
+
+	@media only screen and (min-width: 1024px) {
+        margin: 7rem 0 9rem 0;
+    }
+}
